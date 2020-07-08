@@ -271,4 +271,359 @@
 // document.write("<tr><th></th><th>" + total + "</th><th>" + totalObtained + "</th><th>" + percentage + "%</th></tr>");
 // document.write("</table>");
 
-//
+// // Chapter 9-11
+// // 1
+// var city = prompt("Enter your City");
+// if (city === "Karachi") {
+//     alert("Welcome to the City of Lights");
+// } else {
+//     alert("Welcome to " + city);
+// }
+
+// // 2
+// var gender = prompt("Enter your gender");
+// if (gender === "Male") {
+//     alert("Good Morning Sir");
+// } else if (gender === "Female") {
+//     alert("Good Morning Ma'am");
+// } else {
+//     alert("Please enter your gender either as 'Male' or 'Female'");
+// }
+
+// // 3
+// var color = prompt("What is the color of traffic light");
+// if (color === "Red") {
+//     alert("Must Stop");
+// } else if (color === "Yellow") {
+//     alert("Ready to Move");
+// } else if (color === "Green") {
+//     alert("Move Now");
+// } else {
+//     alert("Invalid traffic light color");
+// }
+
+// // 4
+// var fuel = +prompt("Please state the amount of fuel remaining in the car");
+// if (fuel < 0.25) {
+//     alert("Please refill the fuel in the car");
+// } else {
+//     alert('You are good to go');
+// }
+
+// // 5
+// a
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// } // true
+
+// b
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// } //false
+
+// c
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// } // true
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// } // true due to no break statement
+
+// d
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// } // true
+
+// e
+// if (true){
+//     alert("True");
+//     }
+//     if (false) {
+//     alert("False");
+// } // true
+
+// f
+// if("car" < "cat"){
+//     alert("car is smaller than cat");
+// } //true
+
+// 6
+// var subject1 = +prompt("Enter marks of subject 1");
+// var subject2 = +prompt("Enter marks of subject 2");
+// var subject3 = +prompt("Enter marks of subject 1");
+// var total = +prompt("Enter total marks");
+// var totalMarks = subject1 + subject2 + subject3;
+// var percentage = (totalMarks/total)*100;
+
+// document.write("<h1>Marks Sheet</h1></br>");
+// document.write("</br>Total Marks : " + total);
+// document.write("</br>Marks Obtained : " + totalMarks);
+// document.write("</br>Percentage : " + percentage + "%");
+// if (percentage >= 80) {
+// document.write("</br>Grade : A-one</br>Remarks: Excellent");
+// } else if (percentage >= 70) {
+// document.write("</br>Grade : A</br>Remarks: Good");
+// } else if (percentage >= 60) {
+//     document.write("</br>Grade : B</br>Remarks: You need to improve");
+// } else if (percentage < 60) {
+//     document.write("</br>Grade : Fail</br>Remarks: Sorry");
+// } else {
+//     alert("Enter valid marks");
+// }
+
+// 7
+// var num = 5;
+// var num1 = +prompt("Enter a number");
+// if (num === num1) {
+//     alert("Bingo! Correct Answer");
+// } else if (num1 === 4) {
+//     alert("Close enough");
+// } else {
+//     alert("Try Again Next Time");
+// }
+
+// // 8
+// var num = prompt("Enter a number");
+// if (num%3 === 0) {
+//     alert("The number is divisible by 3");
+// } else {
+//     alert("Not divisible by 3");
+// }
+
+// // 9
+// var num = prompt("Enter a number");
+// if (num%2 === 0) {
+//     alert("The number is an even");
+// } else {
+//     alert("The number is odd");
+// }
+
+// // 10
+// var num = prompt("Enter a number");
+// if (num > 40) {
+//     alert("It is too hot outside.");
+// } else if (num > 30) {
+//     alert("The Weather today is Normal.");
+// } else if (num > 20) {
+//     alert("Today's Weather is Cool.");
+// } else if (num > 10) {
+//     alert("OMG! Today’s weather is so Cool.");
+// } else {
+//     alert("Enter valid temperature");
+// }
+
+// // 11
+// var num1 = +prompt("Enter number 1");
+// var operator = prompt("Enter operation");
+// var num2 = +prompt("Enter number 2");
+// if (operator === "+") {
+//     alert(num1+num2);
+// } else if (operator === "-") {
+//     alert(num1-num2);
+// } else if (operator === "*") {
+//     alert(num1*num2);
+// } else if (operator === "/") {
+//     alert(num1/num2);
+// } else if (operator === "%") {
+//     alert((num1/num2)*100 + "%");
+// } else {
+//     alert("Invalid number or operator");
+// }
+
+// // Chapter 12-13
+// // 1
+// var character = prompt("Enter an alphabetic character");
+// var ascii = character.charCodeAt();
+// if (ascii < 91 && ascii > 64) {
+//     alert(character + " is in Uppercase");
+// } else if (ascii > 96 && ascii < 122) {
+//     alert(character + " is in Lowercase");
+// } else {
+//     alert("Not an alphabet");
+// }
+
+// // 2
+// var integer1 = +prompt("Enter integer 1");
+// var integer2 = +prompt("Enter integer 2");
+// if (integer1 > integer2) {
+//     alert(integer1 + " is greater");
+// } else if (integer1 < integer2) {
+//     alert(integer2 + " is greater");
+// } else {
+//     alert("Both integers are equal");
+// }
+
+// // 3
+// var integer1 = prompt("Enter integer 1");
+// if (integer1 > 0) {
+//     alert(integer1 + " is positive");
+// } else if (integer1 < 0) {
+//     alert(integer2 + " is negative");
+// } else {
+//     alert("Number is 0");
+// }
+
+// // 4
+// var charc = prompt("Enter a character");
+// charc = charc.toLowerCase();
+// if (charc == "a" || charc == "e" || charc == "i" || charc == "o" || charc == "u") {
+//         alert("It is a vowel");
+// } else {
+//     alert("it is not a vowel");
+// }
+
+// // 5
+// var pass = prompt("Set Your Password");
+// var pass2 = prompt("Confirm Your Password");
+
+// if (pass === pass2) {
+//     alert("Correct! Password Set");
+// } else {
+//     alert("Please Enter Your Password");
+// }
+
+// // 6
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";
+// console.log(greeting);}
+// else {
+// greeting = "Good evening";
+// console.log(greeting);}
+
+// // 7
+// var time = prompt("Enter Your Time in given 24 hour format like \n1900 (for 07pm)");
+// if (time >= 0000 && time < 1200) {
+//     alert("Good Morning");
+// } else if (time >= 1200 && time < 1700) {
+//     alert("Good Afternoon");
+// } else if (time >= 1700 && time < 2100) {
+//     alert("Good Evening");
+// } else if (time >= 2100 && time < 2359) {
+//     alert("Good Night");
+// } else {
+//     alert("Please input time like this 0900");
+// }
+
+// // Chapter 14-16
+// // 1
+// var studentName = [];
+
+// // 2
+// var studentName = new Array();
+
+// // 3
+// var studentName = ["myname", "yourname"];
+
+// // 4
+// var num = [1,2,4];
+
+// // 5
+// var boolean = [true, false];
+
+// // 6
+// var mixedArray = [1, "five", "wow", true];
+
+// // 7
+// var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"];
+// document.write("<ol>");
+// for (var i = 0; i < qualifications.length; i++){
+// document.write("<li>" + qualifications[i] + "</li>");
+// }
+// document.write("</ol>");
+
+// // 8
+// var studentName = [];
+// var studentScore = [];
+// var studentPercentage = [];
+// var total = 500;
+// for (var i = 0; i < 3; i++) {
+//     studentName.push(prompt("Enter Students name"));
+//     studentScore.push(prompt("Enter Students Score"));
+// }
+// for (var j = 0; j < studentName.length; j++) {
+//     studentPercentage.push((studentScore[j]/500)*100);
+// }
+
+// for (k = 0; k < studentName.length; k++){
+//     document.write("Score of " + studentName[k] + " is " + studentScore[k] + ". Percentage: " + studentPercentage[k] + "%</br>");
+// }
+
+// // 9
+// var colors = ["Red", "Blue", "Green"];
+// display(colors);
+// colors.unshift(prompt("What color do you want to add in the beginning"));
+// display(colors);
+// colors.push(prompt("What color do you want to add in the end"));
+// display(colors);
+// colors.splice(0,0,prompt("Enter Another color to add in start"), prompt("Enter Another color to add in start"));
+// display(colors);
+// colors.shift();
+// display(colors);
+// colors.pop();
+// display(colors);
+// var ind = prompt("At which index you want to add color");
+// var indColor = prompt("What color you want to add");
+// colors.splice(ind,0,indColor);
+// display(colors);
+// var ind1 = prompt("At which index you want to delete color");
+// var indColor1 = prompt("How many color you want to delete");
+// colors.splice(ind1,indColor1);
+// display(colors);
+
+// function display (colors) {
+// document.write("<ol>");
+// for (var i = 0; i < colors.length; i++){
+// document.write("<li>" + colors[i] + "</li>");
+// }
+// document.write("</ol>");
+// }
+
+// // 10
+// var studentScore = [];
+// var j = 5;
+// document.write("Scores of Student : ")
+// for (var i = 0; i < 5; i++) {
+//     studentScore.push(+prompt("Enter Score of Students. " + j-- + " remaining"));
+//     document.write(studentScore[i] + ",");
+// }
+// studentScore.sort((a,b) => a-b);
+// document.write("</br>Ordered Scores of Student : ")
+// for (var k = 0; k < studentScore.length; k++){
+//     document.write(studentScore[k] + ",");
+// }
+
+// // 11
+// var cityNames = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+// document.write("Cities List: ");
+// for (var i = 0; i < cityNames.length; i++) {
+//     document.write(cityNames[i] + ", ")
+// }
+// document.write("</br>Selected Cities List: ");
+// var selectedCities = cityNames.slice(2,4)
+// for (var j = 0; j < selectedCities.length; j++) {
+//     document.write(selectedCities[j] + ", ")
+// }
+
+// // 12
+// var arr = ["This", "is", "my", "cat"];
+// document.write("Array</br>");
+// for (var i=0; i<arr.length; i++) {
+//     document.write(arr[i] + ",");
+// }
+// document.write("</br>" + arr.join(" "));
+
+// 13
