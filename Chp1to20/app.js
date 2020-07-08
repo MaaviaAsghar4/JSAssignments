@@ -626,4 +626,156 @@
 // }
 // document.write("</br>" + arr.join(" "));
 
-// 13
+// // 13
+// var arr = [];
+// var j = 5;
+// document.write("Devices </br>");
+// for (var i = 0; i < 5; i++){
+//     arr.unshift(prompt("Enter a Devices. " + j-- + " remaining"));
+// }
+// arr.reverse();
+// for (var j = 0; j < 5; j++){
+//     document.write(arr[j] + " ,")
+// }
+// arr.reverse();
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// function out (arr) {
+//     var array = arr.pop();
+//     document.write("</br>" + array)
+// }
+
+// // 14
+// var arr = [];
+// var j = 5;
+// document.write("Devices </br>");
+// for (var i = 0; i < 5; i++){
+//     arr.unshift(prompt("Enter a Devices. " + j-- + " remaining"));
+// }
+// arr.reverse();
+// for (var j = 0; j < 5; j++){
+//     document.write(arr[j] + " ,")
+// }
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// document.write("</br>Out:");
+// out(arr);
+// function out (arr) {
+//     var array = arr.pop();
+//     document.write("</br>" + array)
+// }
+
+// // 15
+// var manufacturer = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+// document.write("<select>");
+// for (var i=0; i<manufacturer.length; i++) {
+//     document.write("<option>" + manufacturer[i] + "</option>");
+// }
+// document.write("</select>");
+
+// // Chapter 17-20
+// // 1
+// var activities1 = [1,2,3]; //1D Array
+// var activities2 = ["1","2","3"]; //1D Array
+// var activities3 = [1,2,3]; //1D Array
+// var multiArray = [activities1, activities2, activities3]; // multidimensional array
+
+// // 2
+// var arr1 = [0,1,2,3];
+// var arr2 = [1,0,1,2];
+// var arr3 = [2,1,0,1];
+
+// var arr = [arr1,arr2,arr3];
+
+// // 3
+// for (var i=1; i<11; i++) {
+//     document.write(i + "</br>")
+// }
+
+// // 4
+// var num = +prompt("Enter number to display table");
+// var length = +prompt("Enter length to which table should be displayed");
+// document.write("Multiplication table of " + num + " Length " + length + " </br>")
+// for (var i=1; i<=length; i++) {
+//     document.write(num + "x" + i + "=" + num*i + "</br>");
+// }
+
+// // 5
+// var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+// for (var i=0; i<fruits.length; i++) {
+//     document.write(fruits[i] + "</br>");
+// }
+// for (var j=0; j<fruits.length; j++) {
+//     document.write("Elements at index " + j + " is " + fruits[j] + "</br>");
+// }
+
+// // 6
+// document.write("Counting: ");
+// for (var i=1; i<16; i++) {
+//     document.write(i + ", ");
+// }
+// document.write("</br>Reverse Counting: ");
+// for (var j=10; j>0; j--) {
+//     document.write(j + ", ");
+// }
+// document.write("</br>Even: ");
+// for (var k=0; k<21; (k=k+2)) {
+//     document.write(k + ", ");
+// }
+// document.write("</br>Even: ");
+// for (var l=1; l<20; (l=l+2)) {
+//     document.write(l + ", ");
+// }
+// document.write("</br>Even: ");
+// for (var m=2; m<21; (m=m+2)) {
+//     document.write(m + "k, ");
+// }
+
+// // 7
+// var A = ["cake", "apple pie", "cookies", "chips", "patties"];
+// var search = prompt("Enter an item to search in the bakery");
+// var num = A.indexOf(search);
+// if (num === -1) {
+//     alert(search + " is not available in the bakery");
+// } else {
+//     alert(search + " is available at index " + num + " in our bakery");
+// }
+
+// // 8
+// var A = [24, 53, 78, 91, 12];
+// document.write("Array items: ")
+// for (var i=0; i<A.length; i++) {
+//     document.write(A[i] + " ,");
+// }
+// A.sort((a,b) => a-b)
+// var last = A.pop();
+// document.write("</br> The largest number is " + last);
+
+// // 9
+// var A = [24, 53, 78, 91, 12];
+// document.write("Array items: ")
+// for (var i=0; i<A.length; i++) {
+//     document.write(A[i] + " ,");
+// }
+// A.sort((a,b) => a-b)
+// var last = A.shift();
+// document.write("</br> The smallest number is " + last);
+
+// // 10
+// for (var i=5; i<101; (i=i+5)) {
+//     document.write(i + " ,")
+// }
