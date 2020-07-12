@@ -96,20 +96,183 @@
 //     alert(input + " is available at index " + index + " in our bakery");
 // }
 
-// 15
-var pass = prompt("Enter a new password six characters long that must contain both numbers and alphabets, and it should start with alphabet");
-if (pass.length !== 6) {
-    alert("Password should be six characters only")
-}
+// // 15
+// var pass = prompt("Enter a new password six characters long that must contain both numbers and alphabets, and it should start with alphabet");
+// var value = pass.charCodeAt(0);
+// if (pass.length >= 6) {
+//     if (value > 57) {
+//         for (var i=0; i<pass.length; i++) {
+//             var j = pass.charCodeAt(i);
+//             if ((j > 96 && j < 123) || (j > 64 && j < 91) || (j > 47 && j < 58) ) {
+//                 alert("Hello World")
+//             }
+//         }        
+//     } else if (value > 47 && value < 58) {
+//         alert("Password could not start with a number");
+//     }
+// } else {
+//     alert("Password must be six characters long");
+// }
 
-var value = pass.charCodeAt(0);
-if (value < 48 && j > 57) {
-    alert("password could not be start with a number");
-}
+// // 16
+// var university = "University of Karachi";
+// var uniArray = university.split("");
+// for (var i=0; i<uniArray.length; i++) {
+//     document.write(uniArray[i] + "</br>");
+// }
 
-for (var i=0; i<pass.length; i++) {
-    var j = pass.charCodeAt(i);
-    if ((j > 96 && j < 123) || (j > 64 && j < 91) && (j > 47 && j < 58) ) {
-        var a = 'a';
-    }
-}
+// // 17
+// var userInput = prompt("Enter a string");
+// var last = userInput.slice(userInput.length-1, userInput.length);
+// document.write("User Input: " + userInput);
+// document.write("</br>Last character of input: " + last);
+
+// // 18
+// var str = "The quick brown fox jumps over the lazy dog";
+// document.write("Text: " + str);
+// str = str.toLowerCase();
+// var count = str.match(/the/g);
+// document.write("</br>There are " + count.length + " occurence(s) of word 'the'");
+
+// // Chap 26-30
+// // 1
+// var num = +prompt("Enter a number");
+// var a = Math.round(num);
+// var b = Math.floor(num);
+// var c = Math.ceil(num);
+// document.write("Number: " + num);
+// document.write("</br>Round off value: " + a);
+// document.write("</br>Floor value: " + b);
+// document.write("</br>Ceil Value: " + c);
+
+// // 2
+// var num = +prompt("Enter a negative floating number");
+// var a = Math.round(num);
+// var b = Math.floor(num);
+// var c = Math.ceil(num);
+// document.write("Number: " + num);
+// document.write("</br>Round off value: " + a);
+// document.write("</br>Floor value: " + b);
+// document.write("</br>Ceil Value: " + c);
+
+// // 3
+// var num = +prompt("Enter a number");
+// var a = Math.abs(num);
+// document.write("Absolute value of " + num + " is " + a);
+
+// // 4
+// var dice = (Math.random())*6;
+// var dicey = Math.ceil(dice);
+// document.write("Random Dice Value: " + dicey);
+
+// // 5
+// var coin = (Math.random())*2;
+// var coinage = Math.ceil(coin);
+// if (coinage === 2) {
+// document.write(coinage + "</br>Random coin value: Heads");
+// } else {
+// document.write(coinage + "</br>Random coin value: Tails");
+// }
+
+// // 6
+// var random = (Math.random())*100;
+// var randNum = Math.ceil(random);
+// document.write("Random Number between 1 to 100: " + randNum);
+
+// // 7
+// var weight = prompt("Enter your weigh in Kilograms");
+// var num = parseInt(weight);
+// document.write("The weight of the user is " + num + " kilograms");
+
+// // 8
+// var random = (Math.random())*10;
+// var randNum = Math.ceil(random);
+// var j = 5
+// for (var i=0; i<5; i++) {
+//     var num = +prompt("Enter a number to begin the game. " + j-- + " turns remaining")
+//     if (randNum === num) {
+//         alert("You win");
+//     } else {
+//         alert("Try Again");
+//     }
+// }
+
+// Chap 31-34
+// // 1
+// var rightNow = new Date();
+// document.write(rightNow);
+
+// // 2
+// var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+// var rightNow = new Date();
+// rightNow.toString();
+// var theMonth = rightNow.getMonth();
+// document.write("Month: " + month[theMonth]);
+
+// // 3
+// var day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+// var rightNow = new Date();
+// rightNow.toString();
+// var theDay = rightNow.getDay();
+// document.write("Today is " + day[theDay]);
+
+// // 4
+// var day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+// var rightNow = new Date();
+// rightNow.toString();
+// var theDay = rightNow.getDay();
+// if (theDay === 0 || theDay === 6) {
+//     alert("It's a Fun day")
+// } else {
+//     alert("It's not a Fun day")
+// }
+
+// // 5
+// var rightNow = new Date();
+// rightNow.toString();
+// var theDate = rightNow.getDate();
+// if (theDate >= 0 && theDate <= 14 ) {
+//     alert("First fifteen days of the month");
+// } else {
+//     alert("Last days of the month");
+// }
+
+// // 6
+// var currDate = new Date();
+// var mstoday = currDate.getTime();
+// var minutes = mstoday/(1000*60);
+// document.write("Current Date: " + currDate);
+// document.write("</br> Elapsed milliseconds since January 1, 1970: " + mstoday);
+// document.write("</br> Elapsed minutes since January 1, 1970: " + minutes);
+
+// // 7
+// var currDate = new Date();
+// var hours = currDate.getHours();
+// if (hours >= 12) {
+//     alert("Its PM");
+// } else {
+//     alert("Its AM");
+// }
+
+// // 8
+// var laterDate = new Date("December 31, 2020");
+// document.write("Later Date: " + laterDate);
+
+// // 9
+// var startDate = new Date("June 18, 2015");
+// var currDate = new Date();
+// var msRamzan = startDate.getTime();
+// var rightNow = currDate.getTime();
+// var diff = rightNow - msRamzan;
+// var days = diff/(1000*60*60*24);
+// document.write(days + " days have been passed since ramazan");
+
+// // 10
+// var startDate = new Date("December 05, 2015");
+// var refDate = new Date("January 01, 2015");
+// var msend = startDate.getTime();
+// var msstart = refDate.getTime();
+// var diff = msend - msstart;
+// var sec = diff/(1000*60);
+// document.write("On Reference Date: " + refDate);
+// document.write("</br>" + sec + " seconds had been passed since the beginning of 2015");
