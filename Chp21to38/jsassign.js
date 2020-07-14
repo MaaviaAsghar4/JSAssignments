@@ -276,3 +276,215 @@
 // var sec = diff/(1000*60);
 // document.write("On Reference Date: " + refDate);
 // document.write("</br>" + sec + " seconds had been passed since the beginning of 2015");
+
+// // 11
+// var currDate = new Date();
+// var hours = currDate.getHours();
+// var aheadDate = new Date("July 12, 2020 15:40:00");
+// document.write("Current Date: " + currDate);
+// document.write("</br>1 hour ago, it was " + aheadDate);
+
+// // 12
+// var currDate = new Date();
+// var yearsBack = new Date("July 12, 1920");
+// document.write("Current Date: " + currDate);
+// document.write("</br>100 years back, it was " + yearsBack);
+
+// // 13
+// var age = prompt("Enter your age");
+// var age1 = parseInt(age);
+// var currDate = new Date();
+// var year = currDate.getFullYear();
+// var diff = year - age1;
+// document.write("Your age is " + age1);
+// document.write("</br>Your birth year is " + diff);
+
+// 14
+// var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+// var name = prompt("Enter customer name");
+// var units = 410;
+// var charge = 16;
+// var lateCharge = 350;
+// var currDate = new Date();
+// var monthNow = currDate.getMonth();
+// document.write("Customer Name: " + name);
+// document.write("</br>Month: " + month[monthNow]);
+// document.write("</br>Number of Units: " + units);
+// document.write("</br>Charges per unit: " + charge);
+// document.write("</br></br>Net Amount Payable (within Due Date): " + units*charge);
+// document.write("</br>Late payment surcharge: " + lateCharge);
+// document.write("</br>Gross Amount Payable (after Due Date): " + ((units*charge)+lateCharge));
+
+// Chap 35-38
+// // 1
+// today();
+// function today() {
+//     var currDate = new Date();
+//     document.write(currDate);
+// }
+
+// 2
+// var firstName = prompt("Enter your first name");
+// var lastName = prompt("Enter your last name");
+// greet(firstName,lastName);
+// function greet(a,b) {
+//     alert("Greetings " + a + " " + b);
+// }
+
+// // 3
+// add();
+// function add() {
+// var firstNum = +prompt("Enter first number");
+// var secondNum = +prompt("Enter last number");
+//     var c =  firstNum + secondNum;
+//     alert(c)
+// }
+
+// // 4
+// var firstNum = +prompt("Enter first number");
+// var operator = prompt("Enter your operator");
+// var secondNum = +prompt("Enter last number");
+// calc(firstNum, operator, secondNum);
+// function calc (a, b, c) {
+//     if (b === "+") {
+//         alert(a+c);
+//     } else if (b === "-") {
+//         alert(a-c);
+//     } else if (b === "*") {
+//         alert(a*c);
+//     } else if (b === "/") {
+//         alert(a/c);
+//     } else {
+//         alert("Invalid input");
+//     }
+// }
+
+// // 5
+// var num = prompt("Enter a number");
+// sqr(num);
+// function sqr(a) {
+//     alert(a*a);
+// }
+
+// // 6
+// var num = +prompt("Enter a number to compute factorial");
+// factorial(num);
+// function factorial(num) {
+//     var answer = 1;
+//     if ( num === 0 || num === 1 ) {
+//         document.write("Factorial of number is 1");
+//     } else {
+//     for(var i=num; i>=1; i--) {
+//          answer = answer*i;
+//     }
+//     document.write("Factorial is " + answer);
+// }
+// }
+
+// // 7
+// var start = +prompt("Enter number to begin counting");
+// var end = +prompt("Enter number to end counting");
+// counting(start,end);
+// function counting (start,end) {
+//     for (var i = start; i<=end; i++) {
+//         document.write(i + "</br>");
+//     }
+// }
+
+// // 8
+// var perp = +prompt("Enter Perpendicular");
+// var base = +prompt("Enter Base");
+// calculateHypotenuse(perp,base);
+// function calculateHypotenuse(perp,base) {
+//     var a=1;
+//     var b=1;
+//    function perpSquare(perp) {
+//         a = perp*perp;
+//         return a;
+//     }
+//     perpSquare(perp);
+//    function baseSquare(base) {
+//       b = base*base;
+//       return b;
+//     }
+//     baseSquare(base);
+//    var hyper = (a) + (b);
+//    document.write("Hypotenuse is " + Math.sqrt(hyper));
+// }
+
+// // 9
+// // i
+// area(4,3);
+// function area(a,b) {
+//     var area = a*b;
+//     document.write("Area of rectangle is " + area);
+// }
+
+// // ii
+// var width = +prompt("Enter width of rectangle");
+// var height = +prompt("Enter height of rectangle");
+// area(width,height);
+// function area(a,b){
+//     var rectArea = a*b;
+//     document.write("Area of given rectangle is " + rectArea);
+// }
+
+// // 10
+// var str = prompt("Enter a word to check whether it is palindrome or not");
+// palindrome(str);
+// function palindrome(str) {
+//     var array1 = str.split("");
+//     var rev = array1.reverse();
+//     var str2 = rev.join("");
+//     if (str === str2) {
+//         document.write("Given word is palindrome");
+//     } else {
+//         document.write("Given word is not a palindrome");
+//     }
+// }
+
+// // 11
+// var str = prompt("Enter a string")
+// upper(str);
+// function upper(str) {
+//     var a = [];
+//     var array1 = str.split(" ");
+//     for (var i=0; i<array1.length; i++) {
+//         var b = array1[i];
+//         a.push(b.charAt(0).toUpperCase() + b.slice(1,b.length).toLowerCase());
+//     }
+//     document.write(a.join(" "));
+// }
+
+// // 12
+// var str = prompt("Enter a string to determie the longest word")
+// longest(str);
+// function longest(str) {
+//     var array = str.split(" ");
+//     var array1 = array.sort(function(a,b) {return a.length - b.length})
+//     var b = array1.pop();
+//     document.write("Longest word is " + b);
+// }
+
+// // 13
+// var str = prompt("Enter the string");
+// var charc = prompt("Enter the character you wish to find");
+// find(str,charc);
+// function find(str,char) {
+//     var count = (str.split(char).length-1); 
+//     document.write(char + " appeared " + count + " times in the string")  
+// }
+
+// // 14
+// var pi=3.142;
+// var radius = prompt("Enter radius of a circle");
+// circumference(radius);
+// area(radius);
+// function circumference(rad) {
+//     var circum = 2*pi*rad;
+//     document.write("Circumference of the circle is " + circum);
+// }
+// function area(rad) {
+//     var area1 = pi*rad*rad;
+//     document.write("</br>Radius of the circle is " + area1);
+// }
