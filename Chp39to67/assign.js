@@ -268,4 +268,86 @@
 //     document.getElementById("email").value = document.getElementById("table").rows[edit].cells[2].innerHTML;  
 // }
 
-// 3
+// // Chap 53-58
+// // 1
+// var array = ["others/1.jpg", "others/6.jpg", "others/3.jpg", "others/5.jpg"]
+// for (var i=0; i<array.length; i++) {
+//     var a = document.getElementById("images");    
+// }
+// function image() {
+//    var modal = document.getElementById("modal");
+//    modal.classList.add("Modal-open");
+//    modal.style.display = "block";
+//    modal.src = "others/1.jpg";
+// }
+
+// // 2
+// var size = 20;
+// function zoomIn() {
+//     size = size + 10;
+//     var para = document.getElementById("para");
+//     para.style.fontSize = size + "px";
+// }
+// function zoomOut() {
+//     size = size - 10;
+//     var para2 = document.getElementById("para");
+//     para2.style.fontSize = size + "px";
+// }
+
+// // Chap 58-67
+// // 1
+// // i,ii
+// var element = document.getElementById("main-content");
+// var a = element.childNodes;
+// var text = "";
+// for (var i=0; i<a.length; i++) {
+//     text = text + a[i].nodeName + " "
+// }
+// document.write(text);
+
+// // iii
+// var y = document.getElementsByName("main-content");
+// var b = document.getElementsByClassName("render");
+// for (var j=0; j<b.length; j++) {
+//     document.write(b[j].innerHTML + "<br>");
+// }
+
+// // iv, v
+// var y = document.getElementById("first-name");
+// y.setAttribute("value", "John Doe");
+// var b = document.getElementById("last-name");
+// b.setAttribute("value", "Michael");
+// var y = document.getElementById("email");
+// y.setAttribute("value", "john@yahoo.com");
+
+// 2
+// i,ii,iii
+// var a = document.getElementById("form-content");
+// var b = a.nodeType
+// var c = a.nodeName
+// document.write(b + " " + c)
+// var d = document.getElementById("lastName");
+// var e = d.nodeType;
+// document.write("</br>" + e + " " + d.childNodes[0]);
+// var upd = document.createElement("li")
+// d.childNodes[0] = upd;
+// d.appendChild(upd)
+// document.write("<br>" + d.childNodes[1]);
+
+// // iv
+// var a = document.getElementById("main-content");
+// var b = a.firstChild.nodeName;
+// var c = a.lastChild.nodeName;
+// document.write("First and Last child are " + b + " " + c);
+
+// // v
+// var a = document.getElementById("lastName");
+// var b = a.nextSibling.nodeName;
+// var c = a.previousSibling.nodeName;
+// document.write("Next and Previous siblings are " + b + " " + c);
+
+// // vi
+// var a = document.getElementById("email");
+// var b = a.parentNode.nodeName;
+// var c = a.nodeType;
+// document.write("Parent node and nodetype are " + b + " " + c);
