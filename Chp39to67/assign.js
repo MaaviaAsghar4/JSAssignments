@@ -84,4 +84,188 @@
 //     document.write(vowel4);
 // }
 
-// 7
+// // 7
+// var find = findOccurence();
+// document.write("Total number of consecutive vowels in the string are " + find);
+// function findOccurence() {
+//     var str = "Pleases read this application and give me gratuity";
+//     var str1 = str.toLowerCase().split("");
+//     var count = 0;
+//     for (var i=0; i < str1.length - 1; i++) {
+//         var vowel = str1[i];
+//         var vowelNext = str1[i + 1];
+
+//         if (countVowel(vowel) && countVowel(vowelNext)) {
+//             count++
+//         }
+//     }
+//     return count;
+// }
+
+// function countVowel(v) {
+//     switch (v) {
+//         case 'a':
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//             return true;
+//         default:
+//             return false;
+//     }
+// }
+
+// 8
+// var distance = +prompt("Enter distance in Km");
+// convert(distance);
+// function convert(d) {
+//     var m = d*1000;
+//     var ft = feet(d);
+//     var inc = inch(d);
+//     var cm = centimeter(d);
+//     document.write("Distance in meters is " + m);
+//     document.write("</br>Distance in feet is " + ft);
+//     document.write("</br>Distance in inches is " + inc);
+//     document.write("</br>Distance in centimeters is " + cm);
+// }
+// function feet(d) {
+//     return d*3280.84;
+// }
+// function inch(d) {
+//     return d*39370.1;
+// }
+// function centimeter(d) {
+//     return d*100000;
+// }
+
+// // 9
+// var workingHour = +prompt("Enter your working hour");
+// pay(workingHour);
+// function pay(workingHour) {
+//     var overtime = workingHour - 40;
+//     if (overtime === 0) {
+//         document.write("You will recieve a base salary this month");
+//     } else if (overtime < 0) {
+//         document.write("You will recieve a salary deduction this month");
+//     } else if (overtime > 0) {
+//         var salary = overtime*12;
+//         document.write("You will recieve an overtime of " + salary + " Rs this month");
+//     }
+// }
+
+// // 10
+// var input = +prompt("Enter total amount of cash");
+// cash(input);
+// function cash(input) {
+//     var hund = input/100;
+//     var hundred = Math.floor(hund);
+//     var remain1 = input%100;
+//     var fif = remain1/100;
+//     var fifty = Math.floor(fif);
+//     var remain2 = remain1%100;
+//     var ten = remain2/10;
+//     var tenn = Math.floor(ten);
+//     var remain3 = remain2%10;
+//     document.write("You will have " + hundred + " hundred notes " + fifty + " fifty notes and " + tenn + " ten notes");
+// }
+
+// // Chap 43-48
+// // 1
+// function show() {
+//     var hi = document.getElementById("show");
+//     hi = alert("Greetings")
+// }
+
+// // 2
+// function call() {
+//     alert("Thanks for purchasing the phone");
+// }
+
+// // 3
+// function del(a) {
+//     var del = a.parentNode.parentNode.rowIndex;
+//     document.getElementById("delete").deleteRow(del);
+// }
+
+// // 4
+// function pic() {
+//     var img = document.getElementById("main");
+//     img.src = "images.jpeg"
+// }
+
+// function picchange() {
+//     var img = document.getElementById("main");
+//     img.src = "download.jpeg"
+// }
+
+// // 5
+// var inc = 0;
+// var increment = document.getElementById("inc");
+// function increase() {
+//     inc++;
+//     increment.innerHTML = inc;
+// }
+// function decrease() {
+//     inc--;
+//     increment.innerHTML = inc;
+// }
+
+// // Chap 49-52
+// // 1
+// function getData() {
+//     var first = document.getElementById("fname").value;
+//     var last = document.getElementById("lname").value;
+//     var eaddress = document.getElementById("email").value;
+//     document.write("First Name: " + first);
+//     document.write("</br>Last Name: " + last);
+//     document.write("</br>Email Address: " + eaddress);
+// }
+
+// // 2
+// function read() {
+// var paragraph = "Read more works"
+// var texting = document.getElementById("text");
+// texting.innerHTML = paragraph;
+// }
+
+// // 3
+// function getData() {
+//     var table = document.getElementById("table");
+//     var name = document.getElementById("fname");
+//     var classes = document.getElementById("classes");
+//     var email = document.getElementById("email");
+//     var tr = table.insertRow(-1);
+//     var cellName = tr.insertCell(0);
+//     var cellClass = tr.insertCell(1);
+//     var cellEmail = tr.insertCell(2);
+//     cellName.innerHTML = name.value;
+//     cellClass.innerHTML = classes.value;
+//     cellEmail.innerHTML = email.value;
+//     var cellDel = document.createElement("Button");
+//     cellDel .setAttribute("onclick", "del(this)");
+//     var text1 = document.createTextNode("Delete");
+//     cellDel.appendChild(text1);
+//     tr.appendChild(cellDel);
+//     var cellEdit = document.createElement("Button");
+//     cellEdit .setAttribute("onclick", "edit(this)");
+//     var text2 = document.createTextNode("Edit");
+//     cellEdit.appendChild(text2);
+//     tr.appendChild(cellEdit);
+//     name.value = "";
+//     classes.value = "";
+//     email.value = "";
+// }
+// function del(a) {
+//     var del = a.parentNode.parentNode.rowIndex;
+//     document.getElementById("table").deleteRow(del+1);
+// }
+
+// function edit(a) {
+//     var edit = a.parentNode.parentNode.rowIndex;
+//     console.log(edit)
+//     document.getElementById("fname").value = document.getElementById("table").rows[edit].cells[0].innerHTML;  
+//     document.getElementById("classes").value = document.getElementById("table").rows[edit].cells[1].innerHTML;  
+//     document.getElementById("email").value = document.getElementById("table").rows[edit].cells[2].innerHTML;  
+// }
+
+// 3

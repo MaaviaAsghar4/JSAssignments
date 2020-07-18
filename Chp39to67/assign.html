@@ -4,11 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignmet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
     <h1 style="color: blue; margin-top: 10px;">JS Assignment</h1>
     
+    <!-- Chap 43-48 -->
+    <!-- 1 -->
+    <!-- <div>
+        <a href="#" id="show" onclick="show()">Click Me</a>
+    </div>  -->
 
+    <!-- 2 -->
+    <!-- <style>
+        .main {
+            display: flex;
+            overflow-x: hidden;
+        }
+    </style>
+    <div class="main">
+        <img width="200px" height="200px" onclick="call()" src="download (2).jpeg" alt="Mobile 1">
+        <img width="200px" height="200px" onclick="call()" src="download.jpeg" alt="Mobile 1">
+        <img width="200px" height="200px" onclick="call()" src="download (2).jpeg" alt="Mobile 1">
+        <img width="200px" height="200px" onclick="call()" src="images.jpeg" alt="Mobile 1">
+    </div> -->
+
+    <!-- 3 -->
+    <!-- <table id="delete">
+    <tr>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Class</th>
+    </td>
+    <tr>
+        <td>0</td>
+        <td>John Cena</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Undertaker</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>The Rock</td>
+        <td>Class 10</td>
+        <td><button>Delete</button></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Randy Orton</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Jeff Hardy</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Roman Reigns</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Seth Rollins</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Dean Ambrose</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>The Shield</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>The Evolution</td>
+        <td>Class 10</td>
+        <td><button onclick="del(this)">Delete</button></td>
+    </tr>
+</table> -->
+
+    <!--4-->
+    <!-- <div>
+        <img id="main" width="200px" height="200px" onmouseover="pic()" onmouseout="picchange()" src="download.jpeg" alt="Mobile1">
+    </div> -->
+
+    <!--5-->
+    <!-- <style>
+        .main{
+            display: inline-block;
+            margin-left: 30px;
+        } 
+    </style>
+    <div class="main">
+        <span id="inc" class="count" style="font-weight: bold; font-size: 100px;" >0</span>
+    </div>
+    <div>
+        <button onclick="increase()">Increment</button>
+        <button onclick="decrease()">Decrement</button>
+    </div> -->
+
+    <!--Chap 49-52-->
+    <!--1-->
+    <!-- <style>
+        input {
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .type {
+            font-size: 20px;
+        }
+    </style>
+    <div>
+        <form action="#" style="margin: 10px; font-size: 20px;" >
+            <label for="fname">First Name:</label><br>
+            <input type="text" name="fname" id="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname"><br>
+            <label for="email">email:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <input class="type" type="submit" value="submit" onclick="getData()">
+        </form>
+    </div> -->
+
+    <!--2-->
+    <!-- <div>
+        <p id="para">This is an example text which will be displayed in full when you click the read more button</p>
+        <p id="text"><button onclick="read()">Read More</button></p>
+    </div> -->
+    <!--3-->
+    <!-- <div>
+        <table id="table">
+            <tr>
+                <th>Student Name</th>
+                <th>Class</th>
+                <th>Email</th>
+            </tr>
+        </table>
+        <form action="JavaScript:void(0)" style="margin-top: 10px; padding: 10px;">
+            <label for="fname">Name:</label><br>
+            <input type="text" name="fname" id="fname"><br>
+            <label for="classes">Class:</label><br>
+            <input type="text" name="classes" id="classes"><br>
+            <label for="email">email:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <input class="type" type="submit" value="submit" onclick="getData()">
+        </form>
+    </div> -->
+
+    <!--Chap 53-58-->
+    <!--1-->
+    <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
+        <div class="col ml-1 pr-1 overflow-hidden">
+            <img class="w-100 h-100" src="others/1.jpg" data-target="#carouselExample" data-slide-to="0" alt="Modal Images">
+        </div>
+        <div class="col">
+            <img class="w-100 h-100" src="others/6.jpg" data-target="#carouselExample" data-slide-to="1" alt="Modal Images">
+        </div>
+        <div class="col">
+            <img class="w-100 h-100" src="others/3.jpg" data-target="#carouselExample" data-slide-to="2" alt="Modal Images">
+        </div>
+        <div class="col">
+            <img class="w-100 h-100" src="others/5.jpg" data-target="#carouselExample" data-slide-to="3" alt="Modal Images">
+        </div>
+    </div>
+
+    <div class="modal" id="exampleModal" tableindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            <div class="modal-body">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="others/1.jpg" class="d-block w-100" alt="Sun Set">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="others/6.jpg" class="d-block w-100" alt="Fairytail">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="others/3.jpg" class="d-block w-100" alt="Beach">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="others/5.jpg" class="d-block w-100" alt="Autumn">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <div>
+            <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="assign.js"></script>
 </body>
 </html>
