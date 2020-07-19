@@ -228,7 +228,68 @@
 // texting.innerHTML = paragraph;
 // }
 
-// // 3
+// 3
+// var rIndex,
+//     table = document.getElementById("table");
+
+// function getData() {
+//     var newRow = table.insertRow(table.length),
+//         cell1 = newRow.insertCell(0),
+//         cell2 = newRow.insertCell(1),
+//         cell3 = newRow.insertCell(2),
+//         cell4 = newRow.insertCell(3),
+//         cell5 = newRow.insertCell(4);
+//     var name = document.getElementById("fname").value,
+//         classes = document.getElementById("classes").value,
+//         email = document.getElementById("email").value;
+//     cell1.innerHTML = name;
+//     cell2.innerHTML = classes;
+//     cell3.innerHTML = email;
+//     cell4 = document.createElement("button");
+//     cell4.setAttribute("onclick","del()");
+//     var text4 = document.createTextNode("Delete");
+//     cell4.appendChild(text4);
+//     newRow.appendChild(cell4);
+//     cell5 = document.createElement("button");
+//     cell5.setAttribute("onclick","edit()");
+//     var text5 = document.createTextNode("Edit");
+//     cell5.appendChild(text5);
+//     newRow.appendChild(cell5);
+//     selectedRow();
+//     newRow.style.cursor = "pointer";
+//     document.getElementById("fname").value = "";
+//     document.getElementById("classes").value = "";
+//     document.getElementById("email").value = "";
+// }
+
+// function selectedRow() {
+//     for (var i=1; i<table.rows.length; i++) {
+//         table.rows[i].onclick = function () {
+//             rIndex = this.rowIndex;
+//             document.getElementById("fname").value = this.cells[0].innerHTML;
+//             document.getElementById("classes").value = this.cells[1].innerHTML;
+//             document.getElementById("email").value = this.cells[2].innerHTML;
+//         };
+//     }
+// }
+// selectedRow();
+
+// function edit() {
+//     var name = document.getElementById("fname").value,
+//         classes = document.getElementById("classes").value,
+//         email = document.getElementById("email").value;
+//     table.rows[rIndex].cells[0].innerHTML = name;
+//     table.rows[rIndex].cells[1].innerHTML = classes;
+//     table.rows[rIndex].cells[2].innerHTML = email;
+// }
+
+// function del() {
+//     table.deleteRow(rIndex);
+//     document.getElementById("fname").value = "";
+//     document.getElementById("classes").value = "";
+//     document.getElementById("email").value = "";
+// }
+
 // function getData() {
 //     var table = document.getElementById("table");
 //     var name = document.getElementById("fname");
@@ -242,7 +303,7 @@
 //     cellClass.innerHTML = classes.value;
 //     cellEmail.innerHTML = email.value;
 //     var cellDel = document.createElement("Button");
-//     cellDel .setAttribute("onclick", "del(this)");
+//     cellDel .setAttribute("onclick", "del()");
 //     var text1 = document.createTextNode("Delete");
 //     cellDel.appendChild(text1);
 //     tr.appendChild(cellDel);
@@ -255,9 +316,10 @@
 //     classes.value = "";
 //     email.value = "";
 // }
-// function del(a) {
-//     var del = a.parentNode.parentNode.rowIndex;
-//     document.getElementById("table").deleteRow(del+1);
+// function del() {
+//     var rIndex,table = document.getElementById("table");
+//     rIndex = this.rowIndex;
+//     table.deleteRow(rIndex);
 // }
 
 // function edit(a) {
@@ -270,15 +332,9 @@
 
 // // Chap 53-58
 // // 1
-// var array = ["others/1.jpg", "others/6.jpg", "others/3.jpg", "others/5.jpg"]
-// for (var i=0; i<array.length; i++) {
-//     var a = document.getElementById("images");    
-// }
-// function image() {
-//    var modal = document.getElementById("modal");
-//    modal.classList.add("Modal-open");
-//    modal.style.display = "block";
-//    modal.src = "others/1.jpg";
+// function image(a) {
+//     var img = document.getElementById("modalImages");
+//     img.src = a.src;
 // }
 
 // // 2

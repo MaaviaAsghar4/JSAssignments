@@ -148,6 +148,10 @@
     </div> -->
     <!--3-->
     <!-- <div>
+        <p>Click on the row you wish to edit.<br>
+            Make edits and press the edit button<br>
+            Fill in the fields and click on submit to add your data<br>
+            Click on the delete button to delete a row</p>
         <table id="table">
             <tr>
                 <th>Student Name</th>
@@ -164,34 +168,26 @@
             <input type="email" name="email" id="email"><br>
             <input class="type" type="submit" value="submit" onclick="getData()">
         </form>
-    </div> -->
+    </div>  -->
 
     <!--Chap 53-58-->
     <!--1-->
     <!-- <div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
         <div class="col ml-1 pr-1 overflow-hidden">
-            <img class="w-100 h-100" onclick="image()" src="others/1.jpg" data-target="#carouselExample" data-slide-to="0" alt="Modal Images">
+            <img class="w-100 h-100" onclick="image(this)" src="others/1.jpg" data-target="#carouselExample" data-slide-to="0" alt="Modal Images">
         </div>
         <div class="col">
-            <img class="w-100 h-100" onclick="image()" src="others/6.jpg" data-target="#carouselExample" data-slide-to="1" alt="Modal Images">
+            <img class="w-100 h-100" onclick="image(this)" src="others/6.jpg" data-target="#carouselExample" data-slide-to="1" alt="Modal Images">
         </div>
         <div class="col">
-            <img class="w-100 h-100" onclick="image()" src="others/3.jpg" data-target="#carouselExample" data-slide-to="2" alt="Modal Images">
+            <img class="w-100 h-100" onclick="image(this)" src="others/3.jpg" data-target="#carouselExample" data-slide-to="2" alt="Modal Images">
         </div>
         <div class="col">
-            <img class="w-100 h-100" onclick="image()" src="others/5.jpg" data-target="#carouselExample" data-slide-to="3" alt="Modal Images">
+            <img class="w-100 h-100" onclick="image(this)" src="others/5.jpg" data-target="#carouselExample" data-slide-to="3" alt="Modal Images">
         </div>
-    </div> -->
-    <!-- <div class="images">
-
     </div>
 
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-    </div> -->
-
-    <!-- <div class="modal" id="exampleModal" tableindex="-1" role="dialog" aria-hidden="true">
+     <div class="modal" id="exampleModal" tableindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -199,22 +195,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             <div class="modal-body">
-                <div id="carouselExample" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="others/1.jpg" class="d-block w-100" alt="Sun Set">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="others/6.jpg" class="d-block w-100" alt="Fairytail">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="others/3.jpg" class="d-block w-100" alt="Beach">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="others/5.jpg" class="d-block w-100" alt="Autumn">
-                      </div>
-                    </div>
-                  </div>
+                <img class="w-100 h-100" id="modalImages" src="" alt="">
             </div>
             </div>
             </div>
